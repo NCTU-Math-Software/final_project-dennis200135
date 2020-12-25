@@ -11,10 +11,10 @@ scatter(gx,gy)                              %標記所選的點
 scatter(0,0)                                %標記原點
 
 if(gx(1)==gx(2) && gy(1)==gy(2) && gx(3)==gx(2) && gy(3)==gy(2) && gx(1)==gx(3) && gy(1)==gy(3))    %圖形為一個點
-    disp("點")
+    disp("共點")
 else
     if((gx(1)==gx(2) && gy(1)==gy(2)) || (gx(3)==gx(2) && gy(3)==gy(2)) || (gx(1)==gx(3) && gy(1)==gy(3)))  %圖形為一條線
-        disp("線")
+        disp("共線")
     else
         A1=abs(0.5*(gx(1)*gy(2)+gx(2)*gy(3)+gx(3)*gy(1)-gx(1)*gy(3)-gx(2)*gy(1)-gx(3)*gy(2)));  %所選三角形面積
        
